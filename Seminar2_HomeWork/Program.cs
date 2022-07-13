@@ -35,7 +35,7 @@ ThirdDigit(number);
 
 // Задача 3: Напишите программу, которая принимает на вход цифру, 
 //           обозначающую день недели, и проверяет, является ли этот день выходным.
-
+/*
 void DayOfWeek(int num)
 {
     if (num == 0 || num > 7)
@@ -57,3 +57,32 @@ void DayOfWeek(int num)
 Console.Write("Inter number: ");
 int number = Convert.ToInt32(Console.ReadLine());
 DayOfWeek(number);
+*/
+
+// Задача 4: Принимает число (N), 
+// а на выходе показывает все чётные числа от 1 до N.
+
+void EvenNumbers(int num)
+{
+    if ((num % 2) == 0)                     
+    {
+        while (num > 0)
+        {
+            Console.WriteLine(num);
+            num = num - 2;
+        }
+    }
+    else
+    {
+        num--;
+        while (num > 0)
+        {
+            Console.WriteLine(num);
+            num = num - 2;
+        }
+    }
+}
+
+Console.Write("Inter number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+EvenNumbers(number);
