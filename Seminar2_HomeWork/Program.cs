@@ -13,15 +13,21 @@ Console.WriteLine("Second digit is: " + digit);
 // Задача 2: Программа, которая выводит третью цифру заданного числа или 
 //           сообщает, что третьей цифры нет.
 
-string ThirdDigit(string num)
+void ThirdDigit(int num)
 {
-    if (num.Length > 2)
+    string number = Convert.ToString(num);
+
+    if (number.Length > 2)
     {
-        return Console.WriteLine(num[2]);
+        Console.WriteLine("Third digit is " + number[2]);
     }
-    
+    else
+    {
+        Console.WriteLine("Third digit is not!");
+    }
+
 }
 
-Console.WriteLine("Inter number: ");
+Console.Write("Inter number: ");
 int number = Convert.ToInt32(Console.ReadLine());
-ThirdDigit(Convert.ToString(number));
+ThirdDigit(number);
