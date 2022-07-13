@@ -1,6 +1,6 @@
 ﻿// Задача 1: Программа, которая принимает на вход трёхзначное число и 
 //           на выходе показывает вторую цифру этого числа.
-/*
+
 int SecondDigit(int num)
 {
     return num / 10 % 10;
@@ -9,7 +9,7 @@ int SecondDigit(int num)
 Console.Write("Inter number: ");
 int digit = SecondDigit (Convert.ToInt32(Console.ReadLine()));
 Console.WriteLine("Second digit is: " + digit);
-*/
+
 // Задача 2: Программа, которая выводит третью цифру заданного числа или 
 //           сообщает, что третьей цифры нет.
 /*
@@ -64,13 +64,14 @@ DayOfWeek(number);
 /*
 void EvenNumbers(int num)
 {
-    if ((num % 2) == 0)                     
+    if ((num % 2) == 0)
     {
         while (num > 0)
         {
             Console.WriteLine(num);
             num = num - 2;
         }
+
     }
     else
     {
@@ -80,7 +81,9 @@ void EvenNumbers(int num)
             Console.WriteLine(num);
             num = num - 2;
         }
+
     }
+
 }
 
 Console.Write("Inter number: ");
@@ -113,32 +116,26 @@ EvenOrNotEven(number);
 /*
 void MaxNumber(int num1, int num2, int num3)
 {
-    int max, max1;
     if (num1 > num2)
     {
-        max1 = num1;
-        if (max1 > num3)
+        if (num1 > num3)
         {
-            max = max1;
-            Console.WriteLine("Max = " + max);
+            Console.WriteLine("Max = " + num1);
         }
         else
         {
-            max = num3;
-            Console.WriteLine("Max = " + max);
+            Console.WriteLine("Max = " + num3);
         }
     }
     else
     {
         if (num2 > num3)
         {
-            max = num2;
-            Console.WriteLine("Max = " + max);
+            Console.WriteLine("Max = " + num2);
         }
         else
         {
-            max = num3;
-            Console.WriteLine("Max = " + max);
+            Console.WriteLine("Max = " + num3);
         }
     }
 }
@@ -156,23 +153,18 @@ MaxNumber(num1, num2, num3);
 */
 
 //Задача 7: Принимает два числа и выдаёт, какое число большее, а какое меньшее.
-
+/*
 void MaxAndMinNumbers(int num1, int num2)
 {
-    int max, min;
     if (num1 > num2)
     {
-        max = num1;
-        min = num2;
-        Console.WriteLine("Max = " + max);
-        Console.WriteLine("Min = " + min);
+        Console.WriteLine("Max = " + num1);
+        Console.WriteLine("Min = " + num2);
     }
     else
     {
-        min = num1;
-        max = num2;
-        Console.WriteLine("Max = " + max);
-        Console.WriteLine("Min = " + min);
+        Console.WriteLine("Max = " + num2);
+        Console.WriteLine("Min = " + num1);
     }
 }
 
@@ -182,4 +174,5 @@ int num1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе число: ");    // ввод второго числа
 int num2 = Convert.ToInt32(Console.ReadLine());
 
-MaxAndMinNumbers(num1,num2);
+MaxAndMinNumbers(num1, num2);
+*/
