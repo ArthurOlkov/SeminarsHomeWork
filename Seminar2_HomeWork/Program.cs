@@ -12,7 +12,7 @@ Console.WriteLine("Second digit is: " + digit);
 */
 // Задача 2: Программа, которая выводит третью цифру заданного числа или 
 //           сообщает, что третьей цифры нет.
-
+/*
 void ThirdDigit(int num)
 {
     string number = Convert.ToString(num);
@@ -31,3 +31,29 @@ void ThirdDigit(int num)
 Console.Write("Inter number: ");
 int number = Convert.ToInt32(Console.ReadLine());
 ThirdDigit(number);
+*/
+
+// Задача 3: Напишите программу, которая принимает на вход цифру, 
+//           обозначающую день недели, и проверяет, является ли этот день выходным.
+
+void DayOfWeek(int num)
+{
+    if (num == 0 || num > 7)
+    {
+        Console.WriteLine("You entered the wrong number!");
+    }
+    else
+    {
+            if (num < 6)
+        {
+            Console.WriteLine("No!");
+        }
+        else
+        {
+            Console.WriteLine("Yes!");
+        }
+    }
+}
+Console.Write("Inter number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+DayOfWeek(number);
