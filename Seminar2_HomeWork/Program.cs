@@ -61,7 +61,7 @@ DayOfWeek(number);
 
 // Задача 4: Принимает число (N), 
 // а на выходе показывает все чётные числа от 1 до N.
-
+/*
 void EvenNumbers(int num)
 {
     if ((num % 2) == 0)                     
@@ -86,3 +86,24 @@ void EvenNumbers(int num)
 Console.Write("Inter number: ");
 int number = Convert.ToInt32(Console.ReadLine());
 EvenNumbers(number);
+*/
+
+// Задача 5: Принимает число и выдаёт, является ли число чётным 
+// (делится ли оно на два без остатка).
+
+void EvenOrNotEven(int num)
+{
+    if ((num % 2) == 0)                      
+    {
+        Console.WriteLine("Четное число!");
+    }
+    else
+    {
+        Console.WriteLine("Нечетное число!");
+    }
+    
+}
+
+Console.Write("Inter number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+EvenOrNotEven(number);
