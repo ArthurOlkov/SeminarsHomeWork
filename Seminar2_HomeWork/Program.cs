@@ -110,7 +110,7 @@ EvenOrNotEven(number);
 */
 
 // Задача 6: Принимает на вход три числа и выдаёт максимальное из этих чисел.
-
+/*
 void MaxNumber(int num1, int num2, int num3)
 {
     int max, max1;
@@ -153,3 +153,33 @@ Console.Write("Введите третье число: ");    // ввод тре
 int num3 = Convert.ToInt32(Console.ReadLine());
 
 MaxNumber(num1, num2, num3);
+*/
+
+//Задача 7: Принимает два числа и выдаёт, какое число большее, а какое меньшее.
+
+void MaxAndMinNumbers(int num1, int num2)
+{
+    int max, min;
+    if (num1 > num2)
+    {
+        max = num1;
+        min = num2;
+        Console.WriteLine("Max = " + max);
+        Console.WriteLine("Min = " + min);
+    }
+    else
+    {
+        min = num1;
+        max = num2;
+        Console.WriteLine("Max = " + max);
+        Console.WriteLine("Min = " + min);
+    }
+}
+
+Console.Write("Введите первое число: ");    // ввод первого числа
+int num1 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите второе число: ");    // ввод второго числа
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+MaxAndMinNumbers(num1,num2);
