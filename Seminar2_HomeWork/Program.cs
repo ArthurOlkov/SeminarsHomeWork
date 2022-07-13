@@ -90,7 +90,7 @@ EvenNumbers(number);
 
 // Задача 5: Принимает число и выдаёт, является ли число чётным 
 // (делится ли оно на два без остатка).
-
+/*
 void EvenOrNotEven(int num)
 {
     if ((num % 2) == 0)                      
@@ -107,3 +107,49 @@ void EvenOrNotEven(int num)
 Console.Write("Inter number: ");
 int number = Convert.ToInt32(Console.ReadLine());
 EvenOrNotEven(number);
+*/
+
+// Задача 6: Принимает на вход три числа и выдаёт максимальное из этих чисел.
+
+void MaxNumber(int num1, int num2, int num3)
+{
+    int max, max1;
+    if (num1 > num2)
+    {
+        max1 = num1;
+        if (max1 > num3)
+        {
+            max = max1;
+            Console.WriteLine("Max = " + max);
+        }
+        else
+        {
+            max = num3;
+            Console.WriteLine("Max = " + max);
+        }
+    }
+    else
+    {
+        if (num2 > num3)
+        {
+            max = num2;
+            Console.WriteLine("Max = " + max);
+        }
+        else
+        {
+            max = num3;
+            Console.WriteLine("Max = " + max);
+        }
+    }
+}
+
+Console.Write("Введите первое число: ");    // ввод первого числа
+int num1 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите второе число: ");    // ввод второго числа
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите третье число: ");    // ввод третьего числа
+int num3 = Convert.ToInt32(Console.ReadLine());
+
+MaxNumber(num1, num2, num3);
